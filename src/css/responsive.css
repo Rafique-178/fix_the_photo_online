@@ -7,6 +7,21 @@
     .headerWrapper .forDesktop {
         display: none;
     }
+    .subscribe__section .subscribe__title,
+    .headerBanner .bannerTitle,
+    .about .aboutTitle,
+    .customers .customersTitle,
+    .blog .blogHeading {
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 40px;
+    }
+    .headerBanner .bannerContent {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: inherit;
+    }
 }
 
 @media screen and (min-width: 600px) {

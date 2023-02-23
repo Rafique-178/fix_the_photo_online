@@ -44,7 +44,7 @@ ul {
 .headerWrapper {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     padding: 20px 20px;
     background-color: #fff;
 }
@@ -96,7 +96,8 @@ ul {
     transition: all 0.3s ease;
 }
 .headerMenu .service:hover .subMenu {
-    display: block;}
+    display: block;
+}
 .btn {
     display: inline-block;
     padding: 10px 30px;
@@ -117,6 +118,8 @@ ul {
     background-color: #FEB012;
     color: #fff;
 }
+
+/*------About------*/
 .headerBanner {
     overflow: hidden;
     margin: 90px 0 0 0;
@@ -157,7 +160,7 @@ ul {
     content: "";
     position: absolute;
     display: block;
-    background-image: url(../images/home-header.png);
+    background-image: url(../images/hero-grand-final-tiny.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -165,9 +168,6 @@ ul {
     left: 50%;
     height: 100%;
     top: 60px;
-}
-.mobileLogo {
-    display: none;
 }
 /* About */
 .about
@@ -198,17 +198,19 @@ ul {
 .categories .categoriesItem {
     display:grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
+    grid-gap: 30px;
     margin-bottom: 70px;
 }
 .itemDetails {
-    background-color: #FA585A;
+    background-color: #fff;
     border-radius: 10px;
+    box-shadow: 0px 14px 24px rgb(62 57 107 / 20%);
+    z-index: 999;
 }
 .itemDetails .title {
     font-size: 24px;
     line-height: 32px;
-    color: #fff;
+    color: #000;
     text-align: center;
     padding-top: 30px;
 }
@@ -235,7 +237,6 @@ ul {
     align-items: center;
     flex-direction: column;
     text-align: center;
-    border: 1px dotted #FEB012;
     padding: 30px 10px;
 }
 .choose .qualityImage {
@@ -339,10 +340,10 @@ ul {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    border: 1px solid #FEB012;
-    border-radius: 10px;
     padding: 20px;
     cursor: pointer;
+    box-shadow: 0px 14px 24px rgb(62 57 107 / 20%);
+
 }
 .blog .blogImage {
     width: 100%;
@@ -351,11 +352,10 @@ ul {
     margin-bottom: 20px;
 }
 .blog .blogTitle {
-    font-size: 24px;
-    line-height: 32px;
-    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
     color: #323d47;
-    margin-bottom: 10px;
 }
 .blog .blogText {
     font-size: 16px;
@@ -374,26 +374,25 @@ ul {
     line-height: 26px;
     font-weight: 700;
     color: #323d47;
-    margin-bottom: 10px;
     transition: all 0.3s ease-in-out;
 }
 .blog .blogButton:hover {
     color: #FEB012;
 }
-.blogExploreBtn {
+.blog .blogExploreBtn {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 50px;
 }
 .blog .blogExplore {
-    background-color: #E6E6E6;
-    border: 3px solid #FEB012;
-    border-radius: 50%;
-    font-size: 24px;
+    background-color: transparent;
+    border: 1px solid #FEB012;
+    border-radius: 50px;
+    font-size: 13px;
     line-height: 32px;
+    padding: 0 30px;
     font-weight: 700;
-    width: 200px;
-    height: 200px;
     display: flex;
     align-items: center;
     justify-content: center;

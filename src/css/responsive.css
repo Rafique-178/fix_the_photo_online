@@ -1,0 +1,50 @@
+@media screen and (max-width: 600px) {
+    .headerWrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .headerWrapper .forDesktop {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .headerWrapper {
+        justify-content: space-around;
+    }
+    .headerWrapper .forDesktop {
+        display: none;
+    }
+    .headerWrapper .forMobile {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .headerWrapper .forDesktop {
+        display: none;
+    }
+    .headerWrapper .forMobile {
+        display: block;
+    }
+
+}
+
+@media screen and (min-width: 992px) {
+    .headerWrapper .forDesktop {
+        display: block;
+    }
+    .headerWrapper .forMobile {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .headerWrapper .forDesktop {
+        display: block;
+    }
+    .headerWrapper .forMobile {
+        display: none;
+    }
+}
